@@ -20,5 +20,5 @@
   </build>
   <properties>
   <sonar.projectKey>JAVA</sonar.projectKey>
-</properties>  
+</properties>
 </project>
