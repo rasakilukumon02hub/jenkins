@@ -40,7 +40,7 @@ pipeline {
 
     stage ('upload to artifact') {
       steps {
-          nexusArtifactUploader artifacts: [[artifactId: 'WebApp', classifier: '', file: 'target/WebApp Maven Webapp-1.0.0', type: 'war']], credentialsId: 'Nexus', groupId: 'lu.amazon.aws.demo', nexusUrl: '3.86.112.109', nexusVersion: 'nexus3', protocol: 'http', repository: 'http://3.86.112.109:8081/repository/artifacts/', version: '1.0.0'
+          nexusArtifactUploader artifacts: [[artifactId: 'WebApp', classifier: '', file: 'target/WebApp', type: 'war']], credentialsId: 'Nexus', groupId: 'lu.amazon.aws.demo', nexusUrl: '3.86.112.109', nexusVersion: 'nexus3', protocol: 'http', repository: 'http://3.86.112.109:8081/repository/artifacts/', version: '1.0.0'
        }
     }
 
