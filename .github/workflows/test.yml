@@ -20,8 +20,15 @@ jobs:
           args: >
             --failOnCVSS 7
             --enableRetired
-      - name: Upload Test results
-        uses: actions/upload-artifact@main
-        with:
-           name: Depcheck report
-           path: /reports
+            
+steps:
+- uses: actions/checkout@v2
+
+- uses: actions/download-artifact@v2
+  with:
+    name: my-artifact
+    path: path/to/artifact
+    
+- name: Display structure of downloaded files
+  run: ls -R
+  working-directory: path/to/artifact
