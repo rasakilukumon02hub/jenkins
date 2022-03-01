@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@test
         with:
            name: Depcheck report
-           path: ${{github.workspace}}/reports
+           path: ${{github.workspace}}>>reports
