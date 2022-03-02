@@ -20,6 +20,7 @@ jobs:
           args: >
             --failOnCVSS 7
             --enableRetired
+             steps:    
              - name: Deploy to tomcat
                uses: actions/checkout@v2
-               run: scp /home/runner/.m2/repository/lu/amazon/aws/demo/WebApp/1.0.0/WebApp-1.0.0.war ubuntu@3.83.230.24:/opt/tomcat/webapp/webapp.war
+               run: scp /home/runner/.m2/repository/lu/amazon/aws/demo/WebApp/1.0.0/WebApp-1.0.0.war ubuntu@172.31.90.45:/opt/tomcat/webapp/webapp.war
