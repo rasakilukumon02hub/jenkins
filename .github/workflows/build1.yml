@@ -21,4 +21,4 @@ jobs:
 
       - name: Depcheck
         run: |
-            sh ./scripts/owasp-dependency-check.sh
+            sh owasp-dependency-check.sh
