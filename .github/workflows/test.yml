@@ -20,7 +20,7 @@ jobs:
         run: mvn package
 
       - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action@Test
+        uses: dependency-check/Dependency-Check_Action@main
         id: Depcheck
         with:
           project: 'test'
