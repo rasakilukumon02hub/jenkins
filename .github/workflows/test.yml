@@ -18,14 +18,3 @@ jobs:
 
       - name: Build with Maven
         run: mvn package
-
-      - name: Depcheck
-        uses: dependency-check/Dependency-Check_Action@main
-        id: Depcheck
-        with:
-          project: 'test'
-          path: '.'
-          format: 'HTML'    
-          args: >
-            --failOnCVSS 7
-            --enableRetired
