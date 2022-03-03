@@ -22,7 +22,6 @@ docker run --rm \
     --volume "$REPORT_DIRECTORY":/report \
     owasp/dependency-check \
     --scan /src \
-    --log /report/dc.log
     --format "ALL" \
     --project "My OWASP Dependency Check Project" \
     --out /report
